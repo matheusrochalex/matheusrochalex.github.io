@@ -1,30 +1,30 @@
 body
 {
-	background: #ffd0c8;
-	font-family: consolas;
+	background: #07031A;
+	font-family: lato;
 	color: #101010;
 	text-align: center;
 }
 
 #main
 {
-	background: #ffbd59;
+	background: #4F8A8B;
 	width: 1000px;
 	height: 600px;
 	margin: 25px auto;
-	border: double 2px #e6802d;
+	border: double 2px ##1f3737;
 }
 
 h1
 {
 	text-align: center;
-	font-family: consolas;
+	font-family: lato;
 	font: 24pt;
-	color: #e6802d;
+	color: #B1B493;
 }
 p
 {
-	font-family: consolas;
+	font-family: georgia;
 	font-size: 12pt;
 	text-align: left;
 	text-indent: 48px;
