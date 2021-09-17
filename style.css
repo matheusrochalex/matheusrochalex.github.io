@@ -9,8 +9,8 @@ body
 #main
 {
 	background: #4F8A8B;
-	width: 1000px;
-	height: 600px;
+	width: 85%;
+	height: 85%;
 	margin: 25px auto;
 	border: double 2px #1f3737;
 }
