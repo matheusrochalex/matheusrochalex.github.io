@@ -1,24 +1,75 @@
 <html>
 
 <head>
-<title>Matheus Alexandre</title>
-<link href="style.css" type="text/css" rel="stylesheet">
+  <title>Matheus Alexandre</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
 
-<!-----Including the Lato font to the website----->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <!-----Including the Lato font to the website----->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
-<div id="sidemenu">
-  </div>
-<div id="titlebox">
-<h1>Matheus Alexandre</h1>
-<h2>Software Engineering</h2>
-</div>
-</body>
 
+  <button class="tablink" onclick="openPage('Home', this, 'red')">GITRG</button>
+  <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Chromatism</button>
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')">RoomHouse</button>
+  <button class="tablink" onclick="openPage('About', this, 'orange')">Chevs Escape</button>
+
+  <div id="Home" class="tabcontent">
+    <h3>GITRG</h3>
+    <p>Home is where the heart is..</p>
+  </div>
+
+  <div id="News" class="tabcontent">
+    <h3>Chromatism</h3>
+    <p>Some news this fine day!</p>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <h3>RoomHouse</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h3>Chevs Escape</h3>
+    <p>Who we are and what we do.</p>
+  </div>
+<!-------------------
+  <div id="titlebox">
+    <h1>Matheus Alexandre</h1>
+    <h2>Software Engineering</h2>
+  </div>
+--------------------->
+
+  <script>
+    function openPage(pageName, elmnt, color)
+    {
+      // Hide all elements with class="tabcontent" by default */
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Remove the background color of all tablinks/buttons
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+
+      // Add the specific color to the button used to open the tab content
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
 
 </html>
