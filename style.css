@@ -1,83 +1,42 @@
-/*
-body
-{
-	background: #B1B493;
-	font-family: 'Lato', sans-serif;
-	color: #101010;
-	text-align: center;
+html {
+  margin-left: 150px;
+  border-left: 2px dashed #FFF8E5;
 }
-*/
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
+
+body {
+  background-color: #00A19D;
+  color: #FFF8E5;
+  margin: 10px;
+  margin-top: 160px;
   font-family: 'Lato';
+  line-height: 50%;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+h1 {
+  font-size: 72px;
+  font-weight: 600;
+  color: #FFB344;
 }
 
-.tablink:hover {
-  background-color: #777;
+h2 {
+  font-size: 48px;
+  font-weight: 400;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+h3 {
+  font-size: 36px;
+  font-weight: 200;
+  top: 10px;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
-/*
-#titlebox
-{
-	position: absolute, center;
-	margin-top: 40px;
+#portrait {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: 160px;
+  top: 130px;
 }
 
-h1
-{
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font: 36pt;
-	color: #07031A;
-	margin: 0;
-	padding: 0;
+#mc {
+  margin-top: 30%;
 }
-h2
-{
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font: 24pt;
-	color: #161A03;
-	margin: 0;
-	padding: 0;
-}
-
-p
-{
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 12pt;
-	text-align: left;
-	text-indent: 48px;
-	color: #101010;
-}
-*/
