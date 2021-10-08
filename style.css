@@ -29,11 +29,16 @@ h3 {
   font-weight: 200;
 }
 
+p {
+  font-size: 24px;
+  font-weight: 200;
+}
+
 .textbox {
   height: 10em;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .textbox h1 {
@@ -48,23 +53,95 @@ h3 {
 
 .textbox h3 {
   margin: 0;
-  margin-top: 40%
+  margin-top: 36%
 }
 
 #portrait {
   width: 240px;
   height: 240px;
   position: static;
-  margin-top: 20%;
+  padding-top: 25%;
   left: 50%;
+}
+
+.projects {
+  height: 500px;
+  width: 70%;
+  border: 2px solid #FFF8E5;
+  border-radius: 5px 5px 5px 5px;
+  padding: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  position: relative;
+  overflow: auto;
+}
+
+.projects h1 {
+  font-size: 60px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.projects p {
+  text-align: left;
+  width: 40%;
+}
+
+.projects h2 {
+  text-align: justify;
+  display: inline-block;
+  position: absolute;
+  bottom: 22%;
+  font-size: 16px;
+  font-weight: 200;
+  left: 50%;
+  width: 504px;
+}
+
+.projects a {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: #FFB344;
+}
+
+.projects a:hover {
+  color: #E05D5D;
+}
+
+#camera {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 504px;
+  height: 283px;
   -moz-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
-#mc {
-  position: inherit textbox;
-  margin-top: 30%;
+.projects h3 {
+  text-align: justify;
+  display: inline-block;
+  position: absolute;
+  bottom: 12%;
+  font-size: 16px;
+  font-weight: 200;
+  left: 50%;
+  width: 504px;
+}
+
+#chev {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 504px;
+  height: 364px;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 #email {
@@ -72,11 +149,20 @@ h3 {
   transform: rotate(-90deg);
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1220px) {
   .textbox {
-    width: 90%;
+    width: 100%;
   }
-  #portrait {
+  .projects p {
+    width: 90%
+  }
+  .projects h2 {
+    opacity: 0;
+  }
+  #camera {
+    opacity: 0;
+  }
+  #chev {
     opacity: 0;
   }
 }
