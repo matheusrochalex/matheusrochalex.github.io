@@ -43,24 +43,24 @@ p {
 
 .textbox h1 {
   margin: 0;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .textbox h2 {
   margin: 0;
-  margin-top: 30%
+  margin-top: 20%
 }
 
 .textbox h3 {
   margin: 0;
-  margin-top: 36%
+  margin-top: 22%
 }
 
 #portrait {
   width: 240px;
   height: 240px;
   position: static;
-  padding-top: 25%;
+  padding-top: 12%;
   left: 50%;
 }
 
@@ -144,9 +144,89 @@ p {
   transition: all .5s ease-out;
 }
 
-#email {
-  position: sticky;
-  transform: rotate(-90deg);
+#chrom {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  width: 504px;
+  height: 324px;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+ol {
+  list-style-type: upper-roman;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+
+ol h2 {
+  font-size: 24px;
+}
+
+li {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FFB344;
+}
+
+#git-Logo {
+  background-image: url(GitHub-Mark-Light-64px.png);
+  float: left;
+  display: inline;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 0;
+  left: 32%;
+  transition: top ease 0.5s;
+}
+
+#git-Logo:hover {
+  top: -10px;
+}
+
+#lin-Logo {
+  background-image: url(LI-In-Bug_but_tiny.png);
+  float: left;
+  display: inline;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 0;
+  left: 42%;
+  transition: top ease 0.5s;
+}
+
+#lin-Logo:hover {
+  top: -10px;
+}
+
+#email-Logo {
+  background-image: url(white_mail2.png);
+  float: left;
+  display: inline;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 0;
+  left: 52%;
+  transition: top ease 0.5s;
+}
+
+#email-Logo:hover {
+  top: -10px;
 }
 
 @media screen and (max-width: 1220px) {
