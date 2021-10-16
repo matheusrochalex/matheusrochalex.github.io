@@ -65,7 +65,7 @@ p {
 }
 
 .projects {
-  height: 500px;
+  height: auto;
   width: 70%;
   border: 2px solid #FFF8E5;
   border-radius: 5px 5px 5px 5px;
@@ -74,8 +74,21 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  position: relative;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  width: 49%;
+}
+
+.right {
+  float: right;
+  width: 49%;
+  transition: transform 2s;
+  -moz-transition: transform 2s;
+  -o-transition: transform 2s;
+  -webkit-transition: transform 2s;
 }
 
 .projects h1 {
@@ -86,24 +99,26 @@ p {
 
 .projects p {
   text-align: left;
-  width: 40%;
 }
 
 .projects h2 {
   text-align: justify;
   display: inline-block;
-  position: absolute;
-  bottom: 22%;
   font-size: 16px;
   font-weight: 200;
-  left: 50%;
+  width: 504px;
+}
+
+.projects h3 {
+  text-align: justify;
+  display: inline-block;
+  bottom: 12%;
+  font-size: 16px;
+  font-weight: 200;
   width: 504px;
 }
 
 .projects a {
-  position: absolute;
-  left: 50%;
-  bottom: 10%;
   color: #FFB344;
 }
 
@@ -112,47 +127,18 @@ p {
 }
 
 #camera {
-  position: absolute;
-  top: 8%;
-  left: 50%;
   width: 504px;
   height: 283px;
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-}
-
-.projects h3 {
-  text-align: justify;
-  display: inline-block;
-  position: absolute;
-  bottom: 12%;
-  font-size: 16px;
-  font-weight: 200;
-  left: 50%;
-  width: 504px;
 }
 
 #chev {
-  position: absolute;
-  top: 8%;
-  left: 50%;
   width: 504px;
   height: 364px;
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 #chrom {
-  position: absolute;
-  top: 8%;
-  left: 50%;
   width: 504px;
   height: 324px;
-  -moz-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  transition: all .5s ease-out;
 }
 
 ol {
@@ -189,6 +175,7 @@ li {
 
 #git-Logo:hover {
   top: -10px;
+
 }
 
 #lin-Logo {
@@ -233,17 +220,13 @@ li {
   .textbox {
     width: 100%;
   }
-  .projects p {
-    width: 90%
+  .projects {
+    height: auto;
   }
-  .projects h2 {
-    opacity: 0;
-  }
-  #camera {
-    opacity: 0;
-  }
-  #chev {
-    opacity: 0;
+  .left, .right, #camera, #chev, #chrom, .projects h2, .projects h3 {
+    float: none;
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -254,7 +237,6 @@ li {
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
-
 }
 
 /* Delayed */
