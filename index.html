@@ -1,109 +1,110 @@
+<!--- CHANGES TO BE MADE: ---
+- Add "collaborators" tab to project cards
+--->
+
 <html>
 
 <head>
-  <title>matheus alexandre</title>
-  <link href="style.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" type="text/css" rel="stylesheet">
 
-  <!---Including the Lato font to the website--->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<!---Including the Lato font to the website--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+<!---Including the icon library--->
+<script src="https://kit.fontawesome.com/fb2246f49c.js" crossorigin="anonymous"></script>
 </head>
 
-<!---
-<p id="email">matheusrochalex@hotmail.com</p>
---->
-<body>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div class="fade-in-effect">
-    <div class="textbox">
-      <h1>hello world,</h1>
+<div class="bg-wrap">
+  <img class="bg-img" src="portrait.jpg" alt="">
+
+  <header>
+    <div>
+      <h1>Matheus Alexandre</h1>
+      <p>Software Engineer and Video Game Nerd</p>
+
+      <div class="scroll-project">
+        <p>Scroll down to see my projects!</p>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <ul id="projects">
+      <li class="project_card" id="mocap">
+        <div class="card_content">
+          <div>
+            <h2>Motion Capture</h2>
+            <p>In 2018, I joined the Graphics and Interactive Techniques Research Group (GITRG) and worked on an open-source, affordable Motion Capture system developed in Python.
+              The system was designed to run on a host computer that received the data from cameras attached to a Raspberry Pi 3 each, with each camera detecting markers that were to be attached
+              to whatever motion was to be translated as a computer animation.</p>
+            <p><a href="https://github.com/ChrisIossa/RPi_MoCap" class="btn btn--accent" target="_blank">Learn More</a></p>
+          </div>
+          <figure>
+            <img src="cameraPrototype_square.jpg" alt="MoCap Camera Prototype">
+          </figure>
+        </div>
+      </li>
+
+      <li class="project_card" id="chevs">
+        <div class="card_content">
+          <div>
+            <h2>Chev's Escape</h2>
+            <p>Final project capstone at Western Connecticut State University, a group project that designed an application using Software Engineering practices.
+              The project is a playable game coded in C#, in which the player must go through puzzles to obtain the keys to escape the room.
+              <br><br>Group collaborators: <a href="https://linkedin.com/in/malikroc" target="_blank">Malik Roc</a>,
+              <a href="https://www.linkedin.com/in/krishan-singh-085764174/" target="_blank">Krishan Singh</a>,
+              <a href="https://www.linkedin.com/in/stephen-alpuche-356a441aa/" target="_blank">Stephen Alpuche</a>, and
+              <a href="https://www.linkedin.com/in/corypineau/" target="_blank">Cory Pineau</a>.</p>
+            <p><a href="https://github.com/matheusrochalex/chevsescape" class="btn btn--accent" target="_blank">Learn More</a></p>
+          </div>
+          <figure>
+            <img src="chevs_escape.png" alt="Game's Main Screen">
+          </figure>
+        </div>
+      </li>
+
+      <li class="project_card" id="chromatism">
+        <div class="card_content">
+          <div>
+            <h2>Chromatism</h2>
+            <p>A game developed in C# with the Unity Engine for the Game Programming course taught at Western Connecticut State University.
+              The game is meant to demonstrate the skills learned in Unity throughout the semester and it demonstrates how the 2D engine can be used to make small minigames.</p>
+            <p><a href="https://github.com/matheusrochalex/chromatism" class="btn btn--accent" target="_blank">Learn More</a></p>
+          </div>
+          <figure>
+            <img src="chromatism_square.png" alt="Game Title Screen">
+          </figure>
+        </div>
+      </li>
+
+      <li class="project_card" id="tap-the-red">
+        <div class="card_content">
+          <div>
+            <h2>Tap the Red</h2>
+            <p>Tap the Red is a simple game where a 4x4 display would continually change between colors, and players must hit the red button when the display color changes to red.
+              At every successful hit, the game gets progressively faster, and the player wins once every "level" (differentiated by the speed in which colors change) is passed.</p>
+            <p><a href="https://github.com/matheusrochalex/Tap-the-Red" class="btn btn--accent" target="_blank">Learn More</a></p>
+          </div>
+          <figure>
+            <img src="tap_the_red_square.jpg" alt="The physical box with the breadboard inside.">
+          </figure>
+        </div>
+      </li>
+    </ul>
+  </main>
+</div>
+
+<aside>
+  <div>
+    <h1>Contact me:</h1>
+    <a href="https://github.com/matheusrochalex" class="fa fa-brands fa-github" target="_blank"></a>
+    <a href="https://linkedin.com/in/matheusrochalex" class="fa fa-brands fa-linkedin-in" target="_blank"></a>
+    <a href="mailto:matheusrochalex@hotmail.com" class="fa fa-solid fa-envelope" target="_blank"></a>
+    <a href="https://drive.google.com/file/d/1SqpodTHnVYmH1PIwXEzR-AgAmc5NHaof/view?usp=sharing" class="fa fa-solid fa-clipboard-user" target="_blank"></a>
   </div>
-
-  <div class="fade-in-delayed">
-    <div class="textbox">
-      <h2>my name is Matheus Alexandre</h2>
-    </div>
-  </div>
-
-  <div class="fade-in-delayed-extra">
-    <div class="textbox">
-      <h3>and I like making games.</h3>
-    </div>
-
-    <img src="portrait.jpg" alt="My favorite shirt!" id="portrait">
-  </div>
-
-  <h1>i have worked on</h1>
-
-  <div class="projects">
-    <div class="left">
-      <h1>Motion Capture</h1>
-      <p>In 2018, I joined the Graphics and Interactive Techniques Research Group (GITRG) and worked on an open-source, affordable motion capture system developed in Python.
-        The system was designed to run on a host computer that received the data from cameras attached to a Raspberry Pi 3 each, with each camera detecting markers that were to be attached
-        to whatever motion was to be translated as a computer animation.</p>
-    </div>
-
-    <div class="right">
-      <img src="cameraPrototype.jpg" alt="Camera Prototype" id="camera">
-      <h2>A picture of the prototype for the cameras, where the Raspberry Pi would be in a 3D printed rectangular casing that could be easily manuevered around as a camera.</h2>
-
-      <a href="https://github.com/ChrisIossa/RPi_MoCap" target="_blank">Learn More &gt</a>
-    </div>
-  </div>
-
-  <div class="projects">
-    <div class="left">
-      <h1>Chev's escape</h1>
-      <p>My final project at Western Connecticut State University, a group project with the intent of designing an application using Software Engineering practices.
-        The project is a playable game coded strictly in C#, in which the player must go through puzzles in order to obtain the keys to escape the room.
-        Group collaborators: Malik Roc, Krishan Singh, Stephen Alpuche, and Cory Pineau.</p>
-    </div>
-
-    <div class="right">
-      <img src="chevs_escape.png" alt="My first game!" id="chev">
-      <h3>The intro screen to the game, all images and sprites were designed by Malik Roc.</h3>
-
-      <a href="https://github.com/matheusrochalex/chevsescape" target="_blank">Learn More &gt</a>
-    </div>
-  </div>
-
-  <div class="projects">
-    <div class="left">
-      <h1>Chromatism</h1>
-      <p>A game developed in C# with the Unity Engine for the Game Programming course taught at Western Connecticut State University.
-        The game is meant to demonstrate the skills learned in Unity throughout the semester and it demonstrates how the 2D engine can be used to make small minigames.</p>
-    </div>
-
-    <div class="right">
-      <img src="chromatism.png" alt="My second game!" id="chrom">
-      <h2>The game's main menu.</h2>
-
-      <a href="https://github.com/matheusrochalex/chromatism" target="_blank">Learn More &gt</a>
-    </div>
-  </div>
-
-  <h1>and also worked at</h1>
-
-  <ol>
-    <li>ZAGG</li>
-      <h2>May 2018 - Present</h2>
-      <p>as a sales associate and technician in a fast-paced environment, selling and installing screen protectors as well as repairing phone screens.</p>
-    <li>Graphics and Interactive Techniques Research Group</li>
-      <h2>May 2018 - May 2020</h2>
-      <p>as a research assistant, working in the development of the motion capture system and on animated styles of computer animated characters.</p>
-    <li>McDonald's</li>
-      <h2>August 2016 - May 2018</h2>
-      <p>as a crew trainer, providing consistent customer service and supervising newly employed crew members.</p>
-  </ol>
-
-  <h1>and you can find me on</h1>
-
-  <a href="http://github.com/matheusrochalex" target="_blank" id="git-Logo">Github Logo</a>
-  <a href="http://linkedin.com/in/matheusrochalex" target="_blank" id="lin-Logo">Linkedin Logo</a>
-  <a href="mailto:matheus.alexandre1997@gmail.com" target="_blank" id="email-Logo">Email Logo</a>
-
-</body>
+</aside>
 
 </html>
